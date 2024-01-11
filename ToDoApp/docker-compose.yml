@@ -1,0 +1,29 @@
+version: '3.4'
+
+networks:
+  host:
+    driver: bridge
+
+services:
+  todosqldata:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - MSSQL_USER=sa
+      - MSSQL_SA_PASSWORD=RuKiYeDiNlEr?
+      - ACCEPT_EULA=Y
+    ports:
+      - "5433:1433"
+    networks:
+      - host
+
+  todoapp:
+    image: ${DOCKER_REGISTRY-}todoapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5285:80"
+    depends_on:
+      - todosqldata
+    networks:
+      - host

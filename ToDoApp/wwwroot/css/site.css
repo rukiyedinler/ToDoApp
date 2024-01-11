@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.nav-link.text-dark {
+
+    color: aliceblue; /* Yazý rengi */
+}
+/* Logout butonunu arka plan rengini deðiþtirme */
+#logoutForm {
+    background-color: white; /* Örnek: Yeþil arka plan */
+    width: 188px; /* Örnek: Geniþlik 120px */
+    text-align: center;
+    color: aliceblue; /* Yazý rengi */
+}
+#logout {
+    background-color: white; /* Örnek: Yeþil arka plan */
+    width: 188px; /* Örnek: Geniþlik 120px */
+    text-align: center;
+    color: aliceblue; /* Yazý rengi */ 
+}
+/* Login butonunu arka plan rengini deðiþtirme */
+#login {
+    background-color: white; /* Örnek: Mavi arka plan */
+    width: 183px; /* Örnek: Geniþlik 120px */
+    text-align: center;
+    color: aliceblue; /* Yazý rengi */
+}
+/* Register butonunu arka plan rengini deðiþtirme */
+#register {
+    background-color: white; /* Örnek: Kýrmýzý arka plan */
+    width: 188px; /* Örnek: Geniþlik 120px */
+    text-align: center;
+    color: aliceblue; /* Yazý rengi */
+}
